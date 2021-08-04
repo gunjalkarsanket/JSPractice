@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p id="upper" >upper case to lowercase</p>
+        <p id="check" ></p>
+        <button onclick="uppercase()"> click here </button>
+        <div id ="d">
+            <p id="p1">
+                this is p1
+                </p>
+                <p>
+                    this is p2
+                    </p>
+            </div>
+       <script>
+            var name="sanket";
+            document.write(name.slice(2,4));
+            document.write(name.substr(2,4));
+            document.write(name.substring(2,4));
+            document.write(name.toUpperCase());
+            var c=document.getElementsByTagName("d");
+           var y=c.getElementsByTagName("p");
+           document.getElementById("check").innerhtml=y[0].;
+            function uppercase()
+            {
+                var up=document.getElementById("upper").innerHTML;
+                document.getElementById("upper").innerHTML=up.toUpperCase();
+            }
+           </script>
+       
+        </html>
